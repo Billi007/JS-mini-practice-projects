@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+    <style>
+    .container{
+        background-color: rgb(67, 106, 67);
+        color: whitesmoke;
+        font-size:xx-large;
+        width: 500px;
+        height: 600px;
+        margin: auto;
+ 
+    }
+    .parameters{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 50px 50px;
+    }
+    .temp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 50px;
+    }
+  
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <input class="input" type="text" placeholder="search city name">
+            <button class="search">search</button>
+
+            <div class="temp">
+                <div class="degree">3C</div>
+                <div class="city">Patna</div>
+            </div>
+
+            <div class="parameters">
+                <div>
+                    <div class="humidity">90%</div>
+                    <div>humidity</div>
+                </div>
+
+                <div>
+                    <div class="wind_kilo">10.29 km/hr</div>
+                    <div  class="wind_">wind speed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Index.js"></script>
+</html>
