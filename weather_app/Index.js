@@ -14,6 +14,7 @@ document.querySelector('.degree').innerHTML = Math.round(data.main.temp) + "°C"
 document.querySelector('.city').innerHTML = data.name;
 document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
 document.querySelector('.wind_kilo').innerHTML = Math.round( data.wind.speed) + "km/h";
+document.querySelector('.feels_like').innerHTML = `<span>Feels like ${Math.round(data.main.feels_like)}°C </span> `;
 
 
 }
