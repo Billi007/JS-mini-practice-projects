@@ -71,3 +71,63 @@
 //     console.log(a,b)
 //   }, 0) //0 1 undefined 2 undefined 3 
 
+// function a(){
+// }
+// const b = function() {
+  
+// }
+
+// const c = function d() {
+//   console.log(typeof d)
+//   d = 'e'
+//   console.log(typeof d)
+// }
+
+// console.log(typeof a) //function
+// console.log(typeof b) //function
+// console.log(typeof c) //function
+// console.log(typeof d) //undefined
+// c() //function //function
+
+
+// const a = [0]
+// console.log(a.length) //1
+// a[3] = 3
+// console.log(a.length) //4
+// for (let item of a) {
+//   console.log(item) //0 undefined undefined 3
+// }
+// a.map(item => {console.log(item)}) //0 undefined undefined 3
+// a.forEach(item => {console.log(item)}) //0,3 {bcos it skips empty slots in array}
+// console.log(Object.keys(a)) //["0", "3"]
+// delete a[3]  
+// console.log(a.length) //4 (length doesn't change when deleting)
+// a[2] = 2
+// a.length = 1 //length = 1
+// console.log(a[0],a[1],a[2]) //0, undefined , undefined
+
+// console.log(Math.min()) //Infinity
+// console.log(Math.max()) //-Infinity
+// console.log(Math.min(1)) //1
+// console.log(Math.max(1,2)) //2
+// console.log(Math.min([1,2,3])) //NaN (Math.min() expects numeric arguments, not an array)
+
+// console.log(0 == '0') //true
+// console.log(0 === '0') //false
+// console.log(Object.is(0, '0')) //false
+
+// console.log(0 == 0) //true
+// console.log(0 === 0) //true
+// console.log(Object.is(0, 0)) //true
+
+// console.log(0 == -0) //true
+// console.log(0 === -0) //true
+// console.log(Object.is(0, -0)) //false
+
+// console.log(NaN == NaN) //false
+// console.log(NaN === NaN) //false
+// console.log(Object.is(NaN, NaN)) //true
+
+// console.log(0 == false) //true
+// console.log(0 === false) //false
+// console.log(Object.is(0, false))//false
